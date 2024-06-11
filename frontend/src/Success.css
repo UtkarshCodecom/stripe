@@ -1,0 +1,73 @@
+/* src/Success.css */
+
+.success-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .success-message {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .success-message h1 {
+    color: #4caf50;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .success-message p {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .checkmark-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .checkmark {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #4caf50;
+    position: relative;
+    animation: scaleUp 1s ease-in-out;
+  }
+  
+  .checkmark::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 10px;
+    height: 25px;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+    transform: rotate(45deg);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scaleUp {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  

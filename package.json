@@ -1,0 +1,23 @@
+{
+  "name": "pseudo",
+  "version": "1.0.0",
+  "description": "pseudo",
+  "main": "backend/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1",
+    "stripe": "^15.10.0",
+    "strips": "^0.0.10",
+    "uuid": "^10.0.0"
+  }
+}
